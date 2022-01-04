@@ -31,6 +31,9 @@ This can be done as such:
         - branch: "$BITRISE_GIT_BRANCH"
         # This will be the name of the app being released, either "IOS" or "Android".
         - release_name: "..."
+        # This will be the type of app being released, either "IOS" or "ANDROID".
+        - mobile_platfrom: "..."
+        - auth_token: "..."
      is_always_run: true
      is_skippable: false
 ```
