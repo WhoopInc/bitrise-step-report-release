@@ -34,7 +34,7 @@ toolkit:
 inputs:
   - url:
     opts:
-      title: "Tombston Service API endpoint"
+      title: "Tombstone Service API endpoint"
       summary: |-
         Specifies the endpoint to send the Bitrise release info to
       is_required: true
