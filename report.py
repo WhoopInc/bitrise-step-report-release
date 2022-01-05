@@ -13,7 +13,7 @@ url = os.environ.get('url')
 auth_token = os.environ.get('auth_token')
 
 released_at = datetime.now(timezone.utc)
-released_at = released_at.strftime("%Y-%m-%dT%H:%M:%S.") + released_at.strftime("%f")[:3] + released_at.strftime("%z")
+released_at = released_at.strftime("%Y-%m-%dT%H:%M:%S.") + released_at.strftime("%f")[:3] + '+00:00'
 
 payload = {
     "release_name": release_name,
