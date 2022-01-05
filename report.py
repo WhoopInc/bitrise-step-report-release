@@ -18,7 +18,7 @@ released_at = released_at.strftime("%Y-%m-%dT%H:%M:%S.") + released_at.strftime(
 payload = {
     "release_name": release_name,
     "version_name": version_name,
-    "version_code": version_code,
+    "version_code": int(version_code),
     "branch": branch,
     "mobile_platform": mobile_platform,
     "hard_tombstone": False,
