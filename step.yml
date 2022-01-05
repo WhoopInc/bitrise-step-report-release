@@ -13,9 +13,9 @@ summary: |
   Bitrise step that reports releases to Tombstone Service 
 description: |
   Reports release info to PROD tombstone-service. (Dev releases are handled by the deploy WBL)
-website: https://github.com/WhoopInc/bitrise-report-release
-source_code_url: https://github.com/WhoopInc/bitrise-report-release
-support_url: https://github.com/WhoopInc/bitrise-report-release/issues
+website: https://github.com/WhoopInc/bitrise-step-report-release
+source_code_url: https://github.com/WhoopInc/bitrise-step-report-release
+support_url: https://github.com/WhoopInc/bitrise-step-report-release/issues
 project_type_tags:
   - android
   - ios
