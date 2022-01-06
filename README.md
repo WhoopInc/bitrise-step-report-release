@@ -22,15 +22,18 @@ This can be done as such:
 ### Usage
 - Add a step call within the desired workflow of your `bitrise.yml` to report the new release:
 ```yaml
-- git::https://github.com/WhoopInc/bitrise-report-release.git@main:
+- git::https://github.com/WhoopInc/bitrise-step-report-release.git@main:
      title: Send mobile release to Tombstone Service
      inputs:
-        - url: $PROD_TOMBSTONE_URL
+        - url: "$PROD_TOMBSTONE_URL"
         - version_code: "$XCODE_BUNDLE_VERSION"
         - version_name: "$XCODE_VERSION_NAME"
         - branch: "$BITRISE_GIT_BRANCH"
         # This will be the name of the app being released, either "IOS" or "Android".
         - release_name: "..."
+        # This will be the type of app being released, either "IOS" or "ANDROID".
+        - mobile_platform: "..."
+        - auth_token: "$TOMBSTONE_AUTH_TOKEN"
      is_always_run: true
      is_skippable: false
 ```
